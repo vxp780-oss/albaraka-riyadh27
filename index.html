@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة البركة الدولية التجارية - الرياض</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cairo', sans-serif; }
+        body { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; background: linear-gradient(135deg,#0d1b2a,#1b263b,#415a77); color:#fff; }
+        .card { width:100%; max-width:450px; padding:30px 20px; border:1px solid rgba(255,255,255,.15); border-radius:25px; background:rgba(255,255,255,.07); backdrop-filter:blur(15px); box-shadow:0 15px 35px rgba(0,0,0,.5); text-align:center; }
+        .logo { width:100px; height:100px; margin:0 auto 15px; overflow:hidden; border:3px solid #ff4d4d; border-radius:50%; background:#fff; }
+        .logo img { width:100%; height:100%; object-fit:cover; }
+        h1 { font-size:22px; font-weight:900; margin-bottom:5px; }
+        .subtitle { color:#ff4d4d; font-size:14px; font-weight:700; margin-bottom:15px; }
+        .bio { margin-bottom:25px; padding:12px; border-radius:12px; background:rgba(0,0,0,.2); color:#e0e0e0; font-size:13px; line-height:1.8; }
+        .title { margin:20px 0 10px; padding-bottom:5px; border-bottom:1px solid rgba(255,255,255,.1); color:#4ecca3; font-size:15px; font-weight:700; text-align:right; }
+        .price { margin-bottom:10px; padding:12px; border-right:4px solid #ff4d4d; border-radius:12px; background:rgba(0,0,0,.3); text-align:right; }
+        .price.vip { border-right-color:#ffd700; }
+        .price-line { display:flex; justify-content:space-between; margin-bottom:4px; font-size:13px; font-weight:700; }
+        .tag { color:#4ecca3; font-weight:900; }
+        .details { color:#ccc; font-size:11px; line-height:1.7; }
+        .btn { display:flex; width:100%; align-items:center; justify-content:center; gap:10px; margin-bottom:12px; padding:12px; border:0; border-radius:12px; background:linear-gradient(135deg,#25d366,#128c7e); color:#fff; text-decoration:none; font-size:15px; font-weight:700; cursor:pointer; }
+        .btn.call { background:linear-gradient(135deg,#007aff,#0056b3); }
+        .btn.tiktok { background:linear-gradient(135deg,#000,#333); }
+        .btn.insta { background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
+        .admin { margin-top:25px; padding-top:15px; border-top:1px solid rgba(255,255,255,.1); }
+        .admin-btn { width:100%; padding:8px 15px; border:0; border-radius:8px; background:rgba(255,255,255,.1); color:#ccc; font-size:12px; cursor:pointer; }
+        .modal { display:none; position:fixed; inset:0; z-index:100; align-items:center; justify-content:center; padding:20px; background:rgba(0,0,0,.8); }
+        .modal-content { width:100%; max-width:400px; padding:20px; border:1px solid rgba(255,255,255,.2); border-radius:15px; background:#1b263b; text-align:right; }
+        .modal input, .modal textarea { width:100%; margin:8px 0; padding:10px; border:1px solid #415a77; border-radius:8px; background:#0d1b2a; color:#fff; font-size:13px; }
+        .save { background:#4ecca3!important; color:#000!important; }
+        .close { width:100%; margin-top:10px; padding:8px 15px; border:0; border-radius:8px; background:#ff4d4d; color:#fff; font-weight:700; cursor:pointer; }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <div class="logo"><img src="https://i.ibb.co/6y4G1v7/1000674825.jpg" alt="شعار شركة البركة"></div>
+        <h1>شركة البركة الدولية التجارية</h1>
+        <div class="subtitle">موظف خدمة العملاء - دوام الليل (فرع الرياض)</div>
+        <div class="bio">نقل ركاب ومسافرين 🚌<br>خدمات VIP وعادي من المملكة العربية السعودية إلى اليمن 🇾🇪</div>
+
+        <a class="btn" href="https://wa.me/966506940500" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> مراسلة عبر واتساب</a>
+        <a class="btn call" href="tel:+966506940500"><i class="fa-solid fa-phone"></i> اتصال مباشر (0506940500)</a>
+
+        <div class="title"><i class="fa-solid fa-ticket"></i> أسعار التذاكر ومواعيد الرحلات</div>
+        <section id="prices">
+            <div class="price vip"><div class="price-line"><span>رحلات الشمال (VIP)</span><span class="tag">350 ريال</span></div><div class="details">صنعاء، إب، ذمار، يريم، عفار<br>🕒 الحضور: 2 ظهراً | المغادرة: 4 عصراً</div></div>
+            <div class="price"><div class="price-line"><span>رحلات الشمال (عادي)</span><span class="tag">250 ريال</span></div><div class="details">صنعاء، إب، ذمار، يريم، عفار<br>🕒 الحضور: 2 ظهراً | المغادرة: 4 عصراً</div></div>
+            <div class="price"><div class="price-line"><span>رحلات الجنوب والباص العادي</span><span class="tag">250 ريال</span></div><div class="details">المكلا، عدن، عتق، شبوة<br>🕒 الحضور: 5 عصراً | المغادرة: 7 مساءً</div></div>
+        </section>
+
+        <div class="title"><i class="fa-solid fa-share-nodes"></i> حساباتنا الرسمية</div>
+        <a class="btn tiktok" href="https://www.tiktok.com/@albaraka2025" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i> تيك توك شركة البركة</a>
+        <a class="btn insta" href="https://www.instagram.com/vxp780" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> إنستغرام الشركة</a>
+
+        <div class="admin"><button class="admin-btn" type="button" onclick="openAdmin()"><i class="fa-solid fa-gear"></i> تحديث الأسعار والمواعيد</button></div>
+    </main>
+
+    <div id="adminModal" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <h3 style="margin-bottom:10px;color:#4ecca3">لوحة تحديث الأسعار والمواعيد</h3>
+            <input type="password" id="adminPass" placeholder="الرقم السري">
+            <textarea id="newPricesText" rows="6" placeholder="اكتب التعديلات الجديدة هنا..."></textarea>
+            <button class="btn save" type="button" onclick="saveChanges()">حفظ التعديلات</button>
+            <button class="close" type="button" onclick="closeAdmin()">إغلاق</button>
+        </div>
+    </div>
+
+    <script>
+        const ADMIN_PIN = '1234';
+        const savedPrices = localStorage.getItem('albaraka-prices');
+        if (savedPrices) document.getElementById('prices').innerHTML = savedPrices;
+
+        function openAdmin() { document.getElementById('adminModal').style.display='flex'; }
+        function closeAdmin() { document.getElementById('adminModal').style.display='none'; }
+        function saveChanges() {
+            if (document.getElementById('adminPass').value !== ADMIN_PIN) { alert('الرقم السري خطأ!'); return; }
+            const text = document.getElementById('newPricesText').value.trim();
+            if (!text) return;
+            const price = document.createElement('div');
+            price.className='price vip';
+            const title=document.createElement('div'); title.className='price-line';
+            const name=document.createElement('span'); name.textContent='الأسعار المحدثة'; title.appendChild(name); price.appendChild(title);
+            const details=document.createElement('div'); details.className='details'; details.style.whiteSpace='pre-line'; details.textContent=text; price.appendChild(details);
+            const prices=document.getElementById('prices'); prices.replaceChildren(price);
+            localStorage.setItem('albaraka-prices', prices.innerHTML);
+            alert('تم تحديث الأسعار بنجاح!'); closeAdmin();
+        }
+    </script>
+</body>
+</html>
